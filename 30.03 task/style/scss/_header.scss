@@ -1,0 +1,71 @@
+header {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  .header {
+    nav {
+      ul {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          a {
+            color: white;
+            img {
+              width: 50px;
+            }
+            &::after {
+              content: " ";
+              background-color: transparent;
+              display: block;
+              height: 1px;
+              width: 50%;
+              margin-top: 4px;
+            }
+            &:hover::after {
+              background-color: red;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      margin-top: 100px;
+      p {
+        color: #8a7162;
+        text-decoration: line-through;
+        font-size: 20px;
+        font-family: "Edu NSW ACT Foundation", cursive;
+      }
+      h1 {
+        font-size: 70px;
+        color: white;
+        text-transform: uppercase;
+        margin: 40px 0;
+        width: 50%;
+      }
+      a {
+        color: white;
+        border: 1px solid #8a7162;
+        padding: 10px 20px;
+        background-color: #8a7162;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    .qapaq {
+      width: 500px;
+      position: absolute;
+      right: 15px;
+      transition: 1s;
+      &:hover {
+        transform: translateY(100px);
+      }
+    }
+  }
+}

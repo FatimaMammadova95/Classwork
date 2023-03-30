@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 60px;
+}
+
+header {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+header .header nav ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul li a {
+  color: white;
+}
+header .header nav ul li a img {
+  width: 50px;
+}
+header .header nav ul li a::after {
+  content: " ";
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  width: 50%;
+  margin-top: 4px;
+}
+header .header nav ul li a:hover::after {
+  background-color: red;
+}
+header .header .content {
+  margin-top: 100px;
+}
+header .header .content p {
+  color: #8a7162;
+  text-decoration: line-through;
+  font-size: 20px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+header .header .content h1 {
+  font-size: 70px;
+  color: white;
+  text-transform: uppercase;
+  margin: 40px 0;
+  width: 50%;
+}
+header .header .content a {
+  color: white;
+  border: 1px solid #8a7162;
+  padding: 10px 20px;
+  background-color: #8a7162;
+}
+header .header .content a:hover {
+  background-color: transparent;
+}
+header .header .qapaq {
+  width: 500px;
+  position: absolute;
+  right: 15px;
+  transition: 1s;
+}
+header .header .qapaq:hover {
+  transform: translateY(100px);
+}/*# sourceMappingURL=main.css.map */
