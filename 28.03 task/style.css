@@ -1,0 +1,87 @@
+.boxes {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  display: none;
+  color: wheat;
+}
+.box:hover {
+  transition: all 3s linear 0.3s;
+}
+.box:hover h3 {
+  display: none;
+}
+.box:hover h2 {
+  display: block;
+  transition-duration: 3s;
+  transition-delay: 0.3s;
+}
+.box1 {
+  background-color: red;
+}
+.box1:hover {
+  transform: scale(1.2);
+}
+.box2 {
+  background-color: green;
+}
+.box2:hover {
+  transform: translate(50%, -100%);
+}
+.box3 {
+  background-color: blue;
+}
+.box3:hover {
+  transform: rotateY(360deg);
+}
+.box4 {
+  background-color: orangered;
+}
+.box4:hover {
+  transform: skew(20deg);
+}
+
+/*sec2*/
+.sec2 {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.earth {
+  height: 250px;
+  width: 250px;
+  animation: rotation 10s infinite linear;
+}
+.lunar {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 40%;
+  left: -80%;
+}
+.rotate2 {
+  position: relative;
+  animation: rotation 60s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}    
