@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+}
+header .header nav ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+header .header nav ul li {
+  margin: 10px, 0;
+  transition: transform 1s linear 0s;
+}
+header .header nav ul li:hover {
+  transform: scale(1.2);
+}
+header .header nav ul li a {
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+header .header nav ul li a i {
+  color: white;
+}
+header .header nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+header .header nav ul li a:hover i {
+  color: black;
+}
+
+#section1 .section1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+#section1 .section1 .box {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+#section1 .section1 .box:hover {
+  transform: rotateX(360deg);
+  transition: transform 1s linear 0s;
+}
+#section1 .section1 .box:hover p {
+  display: none;
+}
+#section1 .section1 .box:hover.box1:hover {
+  background-image: url("../images/OIP.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section1 .section1 .box:hover.box2:hover {
+  background-image: url("../images/OIP.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section1 .section1 .box:hover.box3:hover {
+  background-image: url("../images/OIP.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer .footer {
+  background-color: rgb(155, 154, 154);
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer div {
+  margin: 100px 100px 0 100px;
+}
+footer .footer div a {
+  color: black;
+}
+footer .footer div i {
+  color: black;
+}
+footer .footer div ul span {
+  font-weight: bold;
+}
+footer .footer div ul li {
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */

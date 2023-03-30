@@ -1,0 +1,10 @@
+@mixin flexbox($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin image($url) {
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

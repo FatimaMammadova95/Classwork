@@ -1,0 +1,26 @@
+footer{
+    margin-top: 20px;
+    .footer{
+        background-color: rgb(155, 154, 154);
+        height: 50vh;
+        @include flexbox(space-between, flex-start);
+        div{
+            margin: 100px 100px 0 100px;
+            a{
+                color: black;
+            }
+            i{
+                color: black;
+            }
+            ul{                
+                span{
+                    font-weight: bold;                    
+                }
+                li{
+                    margin-top: 10px;
+                }
+            }
+
+        }        
+    }
+}

@@ -1,0 +1,32 @@
+#section1 {    
+  .section1 {
+    height: 100vh;
+    @include flexbox(center, center);
+    gap: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+    .box {
+      height: 200px;
+      width: 200px;
+      background-color: yellow;
+      @include flexbox(center, center);
+      border: 1px solid black;
+      &:hover{
+        transform: rotateX(360deg);
+        transition: transform 1s linear 0s;
+        p{
+            display: none;
+        }        
+        &.box1:hover{
+            @include image(url("../images/OIP.png"))
+        }
+        &.box2:hover{
+            @include image(url("../images/OIP.png"))
+        }    
+        &.box3:hover{
+            @include image(url("../images/OIP.png"))
+        }    
+      }      
+    }
+  }
+}
