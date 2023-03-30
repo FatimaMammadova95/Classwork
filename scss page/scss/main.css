@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: black;
+  width: 100%;
+}
+header nav ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  transition: 1s;
+}
+header nav ul li:hover {
+  transform: scale(1.2);
+}
+header nav ul li a {
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+header nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+section {
+  border: 1px solid black;
+  margin-top: 80px;
+}
+section .section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section .section div {
+  height: 250px;
+  width: 250px;
+  border: 2px dotted black;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 1s;
+}
+section .section div:hover {
+  transform: rotateX(360deg);
+}
+section .section div:hover p {
+  display: none;
+}
+section .section div.box1:hover {
+  background-image: url("../images/Bob Minion.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section .section div.box2:hover {
+  background-image: url("../images/Minions _ Minions bonitos, Minion, Minions.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section .section div.box3:hover {
+  background-image: url("../images/Photos from Fashion Police_ Minions Edition - E! Online.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #f4f5f9;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 300px;
+}
+footer .footer div {
+  margin-top: 50px;
+}
+footer .footer div ul span {
+  font-weight: bold;
+  font-size: 18px;
+}
+footer .footer div ul li {
+  margin-top: 20px;
+}
+footer .footer div ul li i {
+  color: grey;
+}
+footer .footer div ul li a {
+  color: grey;
+}/*# sourceMappingURL=main.css.map */

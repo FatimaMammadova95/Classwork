@@ -1,0 +1,27 @@
+footer {
+  background-color: #f4f5f9;
+  .footer {
+    @include flexbox(center, flex-start);
+    gap: 300px;
+
+    div {
+      margin-top: 50px;
+      ul {
+        span {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        li {
+          margin-top: 20px;
+
+          i {
+            color: grey;
+          }
+          a {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}
