@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "email": "hupy@mailinator.com",
+      "username": "macitorum",
+      "edit": false,
+      "id": 1
+    },
+    {
+      "email": "fatima@mailinator.com",
+      "username": "fatima",
+      "edit": false,
+      "id": 2
+    },
+    {
+      "email": "namilodin@mailinator.com",
+      "username": "surudakyz",
+      "edit": false,
+      "id": 3
+    },
+    {
+      "email": "culaloki@mailinator.com",
+      "username": "gypocedalu",
+      "edit": false,
+      "id": 5
+    },
+    {
+      "email": "myfy@mailinator.com",
+      "username": "xobah",
+      "edit": false,
+      "id": 6
+    },
+    {
+      "email": "dumynera@mailinator.com",
+      "username": "cezoqux",
+      "edit": false,
+      "id": 7
+    },
+    {
+      "email": "haqar@mailinator.com",
+      "username": "gasemewoza",
+      "edit": false,
+      "id": 8
+    },
+    {
+      "email": "jikucu@mailinator.com",
+      "username": "nenyb",
+      "edit": false,
+      "id": 9
+    }
+  ]
+}
