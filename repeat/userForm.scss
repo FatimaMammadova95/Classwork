@@ -1,0 +1,23 @@
+* {
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.section{
+    margin-top: 20px;
+    .sec{
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+}

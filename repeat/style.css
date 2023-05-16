@@ -1,0 +1,150 @@
+* {
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffe4c4;
+  padding: 10px 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
+  gap: 30px;
+}
+header nav ul li {
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+}
+header nav ul li a {
+  color: black;
+  font-size: 18px;
+}
+header nav ul li:hover {
+  border-color: black;
+}
+header nav ul li:hover a {
+  color: brown;
+}
+header nav .fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 778px) {
+  header nav ul {
+    display: none;
+  }
+  header nav .fa-bars {
+    display: block;
+  }
+}
+@media only screen and (max-width: 578px) {
+  header {
+    background-color: black;
+  }
+  header nav .logo {
+    color: white;
+  }
+  header nav .fa-bars {
+    color: white;
+  }
+}
+
+.section {
+  height: 100vh;
+  background-image: url(./images/bg2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 578px) {
+  .section {
+    background-image: url(./images/bg3.jpg);
+  }
+}
+
+.table-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table-sec h3 {
+  padding: 20px 0;
+}
+.table-sec h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: brown;
+}
+.table-sec table tbody td img {
+  height: 40px;
+  border-radius: 50%;
+}
+.table-sec .cards {
+  display: none;
+  width: 100%;
+}
+.table-sec .cards .card {
+  margin: 5px 0;
+  padding: 10px;
+}
+.table-sec .cards .card .id {
+  color: blue;
+}
+.table-sec .cards .card .date {
+  color: green;
+}
+.table-sec .cards .card .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 20px 0;
+}
+.table-sec .cards .card .info .title {
+  display: flex;
+}
+.table-sec .cards .card .info .title img {
+  height: 40px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 778px) {
+  .table-sec table {
+    display: none;
+  }
+  .table-sec .cards {
+    display: block;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .table-sec .cards .card .info {
+    flex-direction: column;
+    align-items: normal;
+    gap: 10px;
+  }
+  .table-sec .cards .card .info .title {
+    gap: 10px;
+  }
+  .table-sec .cards .card .info .btns {
+    margin-left: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

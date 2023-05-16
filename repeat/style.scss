@@ -1,0 +1,158 @@
+* {
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffe4c4;
+  padding: 10px 0;
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto 0;
+      gap: 30px;
+      li {
+        a {
+          color: black;
+          font-size: 18px;
+        }
+        border: 1px solid transparent;
+        padding: 5px;
+        border-radius: 5px;
+        &:hover {
+          border-color: black;
+          a {
+            color: brown;
+          }
+        }
+      }
+    }
+    .fa-bars {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 778px) {
+    nav {
+      ul {
+        display: none;
+      }
+      .fa-bars {
+        display: block;
+      }
+    }
+  }
+  @media only screen and (max-width: 578px) {
+    background-color: black;
+    nav {
+      .logo {
+        color: white;
+      }
+      .fa-bars {
+        color: white;
+      }
+    }
+  }
+}
+.section {
+  height: 100vh;
+  background-image: url(./images/bg2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media only screen and (max-width: 578px) {
+    background-image: url(./images/bg3.jpg);
+  }
+}
+.table-sec {
+  // padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    padding: 20px 0;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: brown;
+    }
+  }
+  table {
+    tbody {
+      td {
+        img {
+          height: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .cards {
+    display: none;    
+    width: 100%;    
+    .card {
+        margin: 5px 0;
+        padding: 10px;
+      .id {
+        color: blue;
+      }
+      .date {
+        color: green;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 20px 0;
+        .title {
+          display: flex;
+          img {
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 778px) {
+    table {
+      display: none;
+    }
+    .cards {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 578px) {
+    .cards{
+        .card{
+            .info{
+                flex-direction: column;
+                align-items: normal;
+                gap: 10px;
+                .title{
+                    gap: 10px;
+                }
+                .btns{
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+  }
+}
