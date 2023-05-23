@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "photo": "./images/Iqo2.jpeg",
+      "name": "Ego",
+      "surname": "Anton",
+      "email": "ego@mailinator.com",
+      "date": "16/05/2023"
+    },
+    {
+      "id": 3,
+      "photo": "./images/Iqo2.jpeg",
+      "name": "Ego",
+      "surname": "Anton",
+      "email": "ego@mailinator.com",
+      "date": "5/14/2023, 4:12:58 PM"
+    },
+    {
+      "photo": "./images/undefined",
+      "name": "Athena",
+      "surname": "Lott",
+      "email": "pazuzynu@mailinator.com",
+      "date": "16/05/2023, 18:35:02",
+      "id": 6
+    }
+  ]
+}
